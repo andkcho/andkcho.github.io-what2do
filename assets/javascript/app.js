@@ -1,4 +1,16 @@
 
+
+// Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAzZdHTXgYGbi78O-obcf4R02PVJ_yBvI4",
+      authDomain: "what2do-a05ed.firebaseapp.com",
+      databaseURL: "https://what2do-a05ed.firebaseio.com",
+      projectId: "what2do-a05ed",
+      storageBucket: "what2do-a05ed.appspot.com",
+      messagingSenderId: "505624481525"
+ };
+ firebase.initializeApp(config);
+
 // I couldn't get the submit button to work?
 // $("#submit-location").on("click", function(event) {
 //     // Prevent form from submitting
