@@ -1,12 +1,21 @@
-//this will hold stuff
-console.log("hi")
- // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyC5JMKi1ecW4nKIx55XGEUqtJRUuNisYSo",
-    authDomain: "what2do-fe0ef.firebaseapp.com",
-    databaseURL: "https://what2do-fe0ef.firebaseio.com",
-    projectId: "what2do-fe0ef",
-    storageBucket: "what2do-fe0ef.appspot.com",
-    messagingSenderId: "254261395910"
-  };
-  firebase.initializeApp(config);
+
+var apiKey = J5Pf0GaMQ2rv8B7eTBMgCXwAavWO6zvr;
+var city = "";
+var stateCode = "";
+var countryCode = "";
+var postalCode = "";
+
+$.ajax({
+  type:"GET",
+  url:"https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=" + apiKey;
+  async:true,
+  dataType: "json",
+  success: function(json) {
+              console.log(json);
+              // Parse the response.
+              // Do other things.
+           },
+  error: function(xhr, status, err) {
+              // This time, we do not end up here!
+           }
+});
